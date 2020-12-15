@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, width=device-width">
+
+	<title>Tienda</title>
+
+	<meta name="description" content="Pagina_Rock">
+	<meta name="jesus" content="Sebas7103">
+
+	<link rel="stylesheet" href="./css/stylesheet.css">
+	<script src="js/jquery_2.1.3.min.js"></script>
+	<script src="js/leContenido.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	<script src="js/jquery.slides.min.js"></script>
+	<script src="js/src.js"></script>
+	
+</head>
+<body >
+	<div class="ir_arriba"></div>
+	
+
+	<header>
+<img src="assets/logo2.png" alt="" class="logo"></img>
+	<div class="botoncito" onclick="botoncito(this);">
+	</div>
+		
+
+			
+			<div class="socialNetworks">
+
+				<div id="facebook" ></div>
+				<div id="twitter" ></div>
+				<div id="tagged" ></div>
+			</div>
+			<div id="logo"></div>
+	<div class="lista">	
+		<nav> 
+			<ul>
+				<li>
+					<a id="Mercado" content="" href="index.html">Mercado</a>
+				</li>
+				<li>
+					<a id="Tecnologia" content="" href="Tecnologia.html">Tecnologia</a>
+				</li>
+				<li>
+					<a id="Promociones" content="" href="Promociones.html">Promociones</a>
+				</li>
+				<li>
+					<a id="Tu_Compra" content="" href="Tu_Compra.html">Tu Compra</a>
+				</li>
+				
+			</ul>
+		</nav>
+	</div>
+	</header>
+	<div id="overlay"></div>
+<div class="main">
+	<div class="slides">
+		<div > 
+			<a href="Eventos.html">
+				<img src="img_slider/slider1.png"  >
+		  	</a>
+		</div>
+			
+		<div>
+			<a href="Biografia.html">
+				<img  src="img_slider/slider2.png" >
+			</a>
+		</div>
+		<div>
+			<a href="Videos.html">
+				<img src="img_slider/slider3.png" >
+			</a>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="centrar">
+
+	<form class="contact_form" action="#" id="contact_form" runat="server"> 
+
+		<div> 
+			<ul> 
+				<li> 
+					<h2>Tu carrito</h2>
+						<span class="required_notification">* Datos requeridos</span> 
+				</li> 
+				<li>
+				  <label >Nombre del articulo:</label>
+				<input type="text" id="myText" value="" required pattern="+">
+					  <span class="form_hint">Formato incorrecto</span>
+				</li> 
+				<li>
+				  <label >Cantidad:</label>
+				<input type="text" id="myText2"  required pattern="+" />
+					  <span class="form_hint">Formato incorrecto</span>
+				</li>
+				<li>
+				 <label >Valor de venta:</label>
+				<input type="text" id="myText3"  required pattern="+" />
+					  <span class="form_hint">Formato incorrecto</span>
+				</li> 
+				<li> 
+					<label for="message">Mensaje:</label> 
+					<textarea name="message" cols="40" rows="6" required></textarea> 
+				</li> 
+				<li> 
+					<button class="submit" type="submit">Comprar</button> 
+				</li> 
+			</ul> 
+		</div> 
+	</form> 
+</div>
+
+
+
+<!--<div class="box">
+    <img class="image"src="bodega/banano.jpg"/>
+    <p><font size="1">Banano tipo exportación $1,496</font></p>
+ </div>-->
+<div id="content">
+	<div id="Publicacion">
+		<div class="Articulos">
+		</div>
+	</div>
+</div>
+
+
+	<footer>
+<img src="assets/logo.png" alt=""></img>
+
+		<section id="footer_izquierda" >
+			<div ALIGN=center><h2>Sobre nosotros</h2></div>
+			<div ALIGN=center class="lineas">Servicio al cliente</div>
+			<div ALIGN=center class="lineas">Salud y bienestar</div>
+			<div ALIGN=center class="lineas">Nuestras tiendas</div>
+			<div ALIGN=center class="lineas">Domicilios </div>
+			<div ALIGN=center class="lineas">Tel.: 4426874  </div>
+			<div ALIGN=center class="lineas"><a  text-decoration: "none"href="index.html">Website: www.Mercadito.com</a> </div>
+	</section>
+	<section id="footer_derecha" >
+			<div ALIGN=center>Síguenos en:</div>
+		<div class="lista2">
+					<nav> 
+						<ul>
+							<li>
+								<a><img src="assets/logo_facebook.png"></img></a>
+						 	</li>
+							<li>
+						
+								<a><img src="assets/logo_twitter.png"></img></a>
+							</li>
+							<li>
+						
+								<a><img src="assets/logo_youtube.png"></img></a>
+						    </li>
+					    </ul>
+					</nav>
+		</div>
+			<BR><BR> 
+			<BR><BR> 
+			<BR><BR> 
+			
+
+			
+	</section>
+
+	</footer>
+	
+
+	<style>
+	
+
+#Mercado:before {
+	content: url("assets/icono_verduras2.png");
+		 
+}
+#Tecnologia:before {
+	content: url("assets/icono_verduras2.png");}
+#Promociones:before {
+	content: url("assets/icono_promociones.png");}
+#Tu_Compra:before {
+	content: url("assets/icono_cajero.png");}
+
+#Mercado:hover:before,#Tecnologia:hover:before,#Promociones:hover:before,#Tu_Compra:hover:before {
+ 	left: -6%;
+}
+#Mercado:before,#Tecnologia:before,#Promociones:before,#Tu_Compra:before  {
+	 position: relative;
+	 top: 2px;
+	 left: -45%;
+	 transition: all 200ms ease;
+	 
+}
+#logo_facebook{
+
+	background: url("assets/logo_facebook.png")   center ;
+	
+}
+
+
+#logo_twitter{
+
+	background: url("assets/logo_twitter.png")   center ;
+	
+}
+#logo_youtube{
+
+	background: url("assets/logo_youtube.png")   center ;
+	
+}
+footer{
+	margin-top: 5%;
+background-color: #FFECB3;
+border-top-right-radius:30px;
+	border-top-left-radius: 30px;
+	
+}
+.botoncito{
+		background: url("assets/menu.png")   center ;
+
+    }
+#logo_facebook,#logo_twitter,#logo_youtube,footer,.botoncito{
+background-repeat:no-repeat;
+		background-size:100% 100%;
+}
+
+
+
+</style>
+<script type="text/javascript">
+            link = "Tu_Compra";
+           console.log(link)
+</script>  
+</body>
+</html>
